@@ -17,6 +17,38 @@
         .logo-wrap {
             margin-bottom: 15px;
         }
+            .video-section {
+    padding: 40px;
+    background-color: #000;
+    text-align: center;
+    }
+
+    .video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    }
+
+    video {
+    width: 100%;
+    display: block;
+    border: none;
+    }
+    
+
+.lang-dropdown {
+  position: fixed;
+  top: 20px;
+  right: 300px;
+}
+
+select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 13px;
+
+}
     </style>
 </head>
 
@@ -178,6 +210,12 @@
                                     <em class="on icon ni ni-moon-fill"></em>
                                 </button>
                             </div> -->
+                            <div class="lang-dropdown">
+                                <select id="languageSelector">
+                                  <option value="en">🇬🇧 English</option>
+                                  <option value="ar">🇸🇦 العربية</option>
+                                </select>
+                              </div>
                             <ul class="nk-menu-buttons flex-lg-row-reverse">
                                 <li><a href="#" class="btn btn-outline-primary rounded-pill">Get Started</a></li>
                                 <li><a class="link link-light" href="login-s2.html">Sign in </a></li>
@@ -225,6 +263,15 @@
             </div>
         </header>
         <main class="nk-pages">
+            <section class="video-section">
+                <div class="video-container">
+                  <video id="myVideo" autoplay muted loop playsinline>
+                    <source src="images/Generate Section-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </section>
+              
             <section class="section bg-darker is-dark section-top-0 has-shape">
                 <div class="nk-shape bg-shape-blur-a start-50 top-50 translate-middle"></div>
                 <div class="container">
@@ -366,7 +413,7 @@
                                         <div class="col-lg-6 col-xl-5">
                                             <div class="rounded-4 bg-gradient-primary bg-opacity-50 p-5 pb-0">
                                                 <div class="block-gfx">
-                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/gfx/process/a.jpg" alt="">
+                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/Profreading.png" alt="">
                                                 </div>
                                             </div>
                                         </div><!-- .col -->
@@ -391,7 +438,7 @@
                                         <div class="col-lg-6 col-xl-5">
                                             <div class="rounded-4  bg-gradient-warning bg-opacity-50 p-5 pb-0">
                                                 <div class="block-gfx">
-                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/gfx/process/b.jpg" alt="">
+                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/Citations.jpeg" alt="">
                                                 </div>
                                             </div>
                                         </div><!-- .col -->
@@ -416,7 +463,7 @@
                                         <div class="col-lg-6 col-xl-5">
                                             <div class="rounded-4  bg-gradient-info bg-opacity-50 p-5 pb-0">
                                                 <div class="block-gfx">
-                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/gfx/process/c.jpg" alt="">
+                                                    <img class="w-100 rounded-top-3 shadow-sm" src="images/Profreading.png" alt="">
                                                 </div>
                                             </div>
                                         </div><!-- .col -->
@@ -705,6 +752,7 @@
         </footer>
         <!-- end page footer -->
     </div>
+    <script src="script.js"></script>
     <script src="assets/js/bundle.js?v1.5.0"></script>
     <script src="assets/js/scripts.js?v1.5.0"></script>
 </body>
